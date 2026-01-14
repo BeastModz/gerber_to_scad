@@ -1,7 +1,25 @@
 # gerber_to_scad
+
+[![Railway Deploy](https://img.shields.io/badge/Deploy%20on-Railway-blueviolet)](https://railway.app/new/template?referralCode=alphasec)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success)](https://solder-stencil.me)
+
 Simple python script for converting gerber files into a 3d printable solder stencil scad file
 
 This repository has both a CLI tool, and a web app available at https://solder-stencil.me.
+
+## 🚀 Live Demo
+
+Try the web application live at **[solder-stencil.me](https://solder-stencil.me)** - no installation required!
+
+Upload your gerber files and download ready-to-print STL files directly from your browser.
+
+## 🚂 Deploy to Railway
+
+Want to run your own instance? Deploy this application to Railway with just a few clicks!
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?referralCode=alphasec)
+
+For detailed deployment instructions, see the [Railway Deployment Guide](RAILWAY_DEPLOYMENT.md).
 
 ## Installation
 
