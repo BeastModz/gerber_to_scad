@@ -27,14 +27,19 @@ The application will:
 - Install OpenSCAD and all dependencies
 - Start the gunicorn web server on the assigned port
 
-### 3. Set Environment Variables (Optional but Recommended)
+### 3. Set Environment Variables (Recommended for Production)
 
 For production deployment, you should set the following environment variables:
 
 1. In your Railway project dashboard, go to "Variables"
 2. Add the following variables:
 
-   - `SECRET_KEY` - A secure random string for Django (generate one using: `python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'`)
+   - **`SECRET_KEY`** (Highly Recommended) - A secure random string for Django. Generate one using:
+     ```bash
+     python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+     ```
+     While a fallback is provided for initial deployment, you should always set a unique key for production use.
+   
    - `DJANGO_SETTINGS_MODULE` - Set to `gts_service.railway_settings` (Railway will use production settings)
 
 Optional variables:

@@ -36,6 +36,9 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 # Use environment variable for SECRET_KEY in production
+# WARNING: The fallback key below is only for initial deployment convenience.
+# For production use, ALWAYS set a unique SECRET_KEY environment variable.
+# Generate one using: python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 SECRET_KEY = os.environ.get(
     'SECRET_KEY',
     '-7lxck0^d7y#5$fq3ubvtm1*_g%nzd-=ich_1x)^f)8j)hgps+'  # Fallback for initial deployment
